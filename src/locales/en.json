@@ -220,6 +220,7 @@
     "Wallet": "Wallet",
     "Send": "Send Funds",
     "QRscanner": "Scan QR code",
-    "TokenSelector": "Select Token"
+    "TokenSelector": "Select Token",
+    "EnterPin": "EnterPin"
   }
 }

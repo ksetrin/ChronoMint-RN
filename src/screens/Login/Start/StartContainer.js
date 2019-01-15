@@ -44,7 +44,8 @@ class StartContainer extends PureComponent {
     const params = {
       password: values.password,
     }
-    this.props.navigation.navigate('GenerateMnemonic', params)
+    // this.props.navigation.navigate('GenerateMnemonic', params)
+    this.props.navigation.navigate('EnterPin', params)
   }
 
   handleSelectAccount = (account) => () => {

@@ -13,6 +13,7 @@ import {
   HeaderBackButton,
 } from 'react-navigation'
 import i18n from '../locales/translation'
+import EnterPin from '../screens/Login/EnterPin'
 import EnterPrivateKey from '../screens/Login/EnterPrivateKey'
 import GenerateMnemonic from '../screens/Login/GenerateMnemonic'
 import EnterMnemonic from '../screens/Login/EnterMnemonic'
@@ -117,6 +118,13 @@ const LoginStack = createStackNavigator(
         headerLeft: <HeaderBackButton onPress={() => navigation.goBack()} tintColor='white' />,
       }),
       screen: EnterPrivateKey,
+    },
+    'EnterPin': {
+      navigationOptions: ({ navigation }) => ({
+        title: i18n.t('ScreensTitles.EnterPin'),
+        headerLeft: <HeaderBackButton onPress={() => navigation.goBack()} tintColor='white' />,
+      }),
+      screen: EnterPin,
     },
   },
   {

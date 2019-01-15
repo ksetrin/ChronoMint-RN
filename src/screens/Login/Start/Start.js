@@ -169,8 +169,8 @@ export default class Start extends PureComponent {
     return (
       <Formik
         initialValues={{
-          password: '',
-          confirmPassword: '',
+          password: '11111111',
+          confirmPassword: '11111111',
         }}
         validationSchema={this.enterPasswordValidationSchema}
         onSubmit={this.props.onClickCreateWalletButton}
